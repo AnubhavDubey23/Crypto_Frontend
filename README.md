@@ -6,13 +6,29 @@ This React application displays a cryptocurrency dashboard with the following fe
 *   **Performance:** Displays a visual indicator of today's high and low BTC price.
 *   **Tokenomics:** Illustrates the initial distribution of BTC tokens (currently a placeholder, integration with `recharts` is explained).
 *   **TradingView Widget:** Displays an interactive BTC price chart using TradingView.
+*   **Team Section:** Showcases team members with descriptions.
+*   **Trending and "You May Also Like" Coins:** Displays trending coins and other coins the user might be interested in.
+
+**Live Demo**
+
+See the deployed version of the cryptocurrency dashboard at: [https://678259be35747672840c88fe--lambent-smakager-7499f2.netlify.app/](https://678259be35747672840c88fe--lambent-smakager-7499f2.netlify.app/)
+
+**Website Preview**
+
+Here are some screenshots showcasing the application's interface:
+
+<p align="center">
+  <img src="Output1.png" alt="Screenshot 1: Main Dashboard Overview" width="400">
+  <img src="Output2.png" alt="Screenshot 2: Sentiment and About Bitcoin Sections" width="400">
+  <img src="Output3.png" alt="Screenshot 3: Team, You May Also Like, and Trending Coins Sections" width="400">
+</p>
 
 ## Getting Started
 
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/your-username/cryptocurrency-dashboard.git](https://github.com/your-username/cryptocurrency-dashboard.git)
+    git clone [https://github.com/AnubhavDubey23/cryptocurrency-dashboard.git](https://github.com/AnubhavDubey23/cryptocurrency-dashboard.git)
     ```
 
 2.  **Install dependencies:**
@@ -38,6 +54,8 @@ The codebase consists of several React components:
 *   **`performance.tsx`:** This component is a static representation of performance and does not fetch data.
 *   **`tokenomics.tsx`:** This component currently holds a placeholder for a chart and some descriptive text. You'll integrate the `recharts` library here to create a functional chart.
 *   **`tradingViewWidget.tsx`:** This component embeds a TradingView chart for BTC using their JavaScript API.
+* **`team.tsx`:** Displays information about team members.
+* **`YouMayLike.tsx` and `TrendingCoins.tsx`:** Display trending coins and coins the user might be interested in, using data fetched from the CoinGecko API.
 
 ## Using `recharts` for Tokenomics Chart
 
